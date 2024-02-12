@@ -1,0 +1,22 @@
+### Create chat
+PUT http://localhost:5000/cat HTTP/1.1
+content-Type: application/json
+
+{
+    "CatName": "super cat 2" 
+}
+
+### get cat
+GET http://localhost:5000/cat HTTP/1.1
+
+### update cat
+POST http://localhost:5000/cat HTTP/1.1
+content-Type: application/json
+
+{
+    "CatName": "update cat name",
+    "Id": "5e2bf8fd-1393-4a8b-bc89-0911a92677f6"
+}
+
+### delete cat
+DELETE http://localhost:5000/cat?id=dbc7beae-34f3-4064-8467-d5609d4fb625 HTTP/1.1
